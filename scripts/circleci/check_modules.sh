@@ -4,7 +4,8 @@ set -e
 
 # Make sure we don't introduce accidental @providesModule annotations.
 EXPECTED='scripts/rollup/wrappers.js'
-ACTUAL=$(git grep -l @providesModule -- './*.js' ':!scripts/rollup/shims/*.js')
+ACTUAL=$(git grep -l @providesModule -- './*.js' ':!scripts/rollup/shims/*.js') 
+# Test
 
 # Colors
 red=$'\e[1;31m'
